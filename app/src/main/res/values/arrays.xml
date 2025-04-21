@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="feature_deals_synonyms">
+        <item>Open deals</item>
+        <item>Open deal</item>
+        <item>Show deals</item>
+        <item>Show deal</item>
+        <item>View deals</item>
+        <item>View deal</item>
+    </array>
+
+    <array name="feature_contacts_synonyms">
+        <item>Open contacts</item>
+        <item>Open contact</item>
+        <item>Show contacts</item>
+        <item>Show contact</item>
+        <item>View contacts</item>
+        <item>View contact</item>
+    </array>
+
+    <array name="feature_companies_synonyms">
+        <item>Open companies</item>
+        <item>Open company</item>
+        <item>Show companies</item>
+        <item>Show company</item>
+        <item>View companies</item>
+        <item>View company</item>
+    </array>
+
+    <array name="feature_tickets_synonyms">
+        <item>Open tickets</item>
+        <item>Open ticket</item>
+        <item>Show tickets</item>
+        <item>Show ticket</item>
+        <item>View tickets</item>
+        <item>View ticket</item>
+    </array>
+
+    <array name="feature_quotes_synonyms">
+        <item>Open quotes</item>
+        <item>Open quote</item>
+        <item>Show quotes</item>
+        <item>Show quote</item>
+        <item>View quotes</item>
+        <item>View quote</item>
+    </array>
+
+    <array name="feature_activities_synonyms">
+        <item>Open activities</item>
+        <item>Open activity</item>
+        <item>Show activities</item>
+        <item>Show activity</item>
+        <item>View activities</item>
+        <item>View activity</item>
+    </array>
+
+    <!-- Thing type synonyms for GET_THING (searching specific records) -->
+    <array name="thing_deal_synonyms">
+        <item>deal $name</item>
+        <item>find deal $name</item>
+        <item>show deal $name</item>
+        <item>view deal $name</item>
+        <item>open deal $name</item>
+    </array>
+
+    <array name="thing_contact_synonyms">
+        <item>contact $name</item>
+        <item>find contact $name</item>
+        <item>show contact $name</item>
+        <item>view contact $name</item>
+        <item>open contact $name</item>
+    </array>
+
+    <array name="thing_company_synonyms">
+        <item>company $name</item>
+        <item>find company $name</item>
+        <item>show company $name</item>
+        <item>view company $name</item>
+        <item>open company $name</item>
+    </array>
+
+    <array name="thing_ticket_synonyms">
+        <item>ticket $name</item>
+        <item>find ticket $name</item>
+        <item>show ticket $name</item>
+        <item>view ticket $name</item>
+        <item>open ticket $name</item>
+    </array>
+
+    <array name="thing_quote_synonyms">
+        <item>quote $name</item>
+        <item>find quote $name</item>
+        <item>show quote $name</item>
+        <item>view quote $name</item>
+        <item>open quote $name</item>
+    </array>
+
+    <array name="thing_activity_synonyms">
+        <item>activity $name</item>
+        <item>task $name</item>
+        <item>find activity $name</item>
+        <item>show activity $name</item>
+        <item>view activity $name</item>
+        <item>open activity $name</item>
+    </array>
+</resources>

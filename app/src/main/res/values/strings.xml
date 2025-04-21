@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vetcomm</string>
+
+    <!-- Module names -->
+    <string name="module_deals">Deals</string>
+    <string name="module_contacts">Contacts</string>
+    <string name="module_companies">Companies</string>
+    <string name="module_tickets">Tickets</string>
+    <string name="module_quotes">Quotes</string>
+    <string name="module_activities">Activities</string>
+
+    <!-- UI labels -->
+    <string name="label_intent_type">Intent Type: %1$s</string>
+    <string name="label_module">Module: %1$s</string>
+    <string name="label_action">Action: %1$s</string>
+    <string name="label_query">Search Query: %1$s</string>
+    <string name="label_no_intent">No intent detected</string>
+    <string name="label_unknown_intent">Unknown intent</string>
+
+    <!-- Action types -->
+    <string name="action_list">View List</string>
+    <string name="action_search">Search Record</string>
+    <string name="action_unknown">Unknown Action</string>
+
+    <!-- Shortcut Labels -->
+    <string name="dealShortcutShortLabel">Search Deal</string>
+    <string name="contactShortcutShortLabel">Search Contact</string>
+    <string name="companyShortcutShortLabel">Search Company</string>
+    <string name="ticketShortcutShortLabel">Search Ticket</string>
+    <string name="quoteShortcutShortLabel">Search Quote</string>
+    <string name="activityShortcutShortLabel">Search Activity</string>
+
+</resources>

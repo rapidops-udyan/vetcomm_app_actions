@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define capabilities -->
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.rapidops.vetcomm.MainActivity"
+            android:targetPackage="com.rapidops.vetcomm">
+            <parameter
+                android:name="thing.name"
+                android:key="query" />
+        </intent>
+    </capability>
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.rapidops.vetcomm.MainActivity"
+            android:targetPackage="com.rapidops.vetcomm">
+            <parameter
+                android:name="feature"
+                android:key="feature" />
+        </intent>
+    </capability>
+
+    <!-- Module shortcuts for listing screens (OPEN_APP_FEATURE) -->
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="deals_list"
+        android:shortcutShortLabel="@string/module_deals">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_deals_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="contacts_list"
+        android:shortcutShortLabel="@string/module_contacts">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_contacts_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="companies_list"
+        android:shortcutShortLabel="@string/module_companies">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_companies_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="tickets_list"
+        android:shortcutShortLabel="@string/module_tickets">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_tickets_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="quotes_list"
+        android:shortcutShortLabel="@string/module_quotes">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_quotes_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="activities_list"
+        android:shortcutShortLabel="@string/module_activities">
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_activities_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <!-- Module shortcuts for specific record search (GET_THING) -->
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_deal"
+        android:shortcutShortLabel="@string/dealShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_deal_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_contact"
+        android:shortcutShortLabel="@string/contactShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_contact_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_company"
+        android:shortcutShortLabel="@string/companyShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_company_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_ticket"
+        android:shortcutShortLabel="@string/ticketShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_ticket_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_quote"
+        android:shortcutShortLabel="@string/quoteShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_quote_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:shortcutId="search_activity"
+        android:shortcutShortLabel="@string/activityShortcutShortLabel">
+        <capability-binding android:key="actions.intent.GET_THING">
+            <parameter-binding
+                android:key="thing.name"
+                android:value="@array/thing_activity_synonyms" />
+        </capability-binding>
+    </shortcut>
+</shortcuts>
