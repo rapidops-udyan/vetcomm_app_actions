@@ -101,7 +101,7 @@
     <!-- Module shortcuts for specific record search (GET_THING) -->
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_deal"
+        android:shortcutId="Deal"
         android:shortcutShortLabel="@string/dealShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
@@ -112,7 +112,7 @@
 
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_contact"
+        android:shortcutId="Contact"
         android:shortcutShortLabel="@string/contactShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
@@ -123,7 +123,7 @@
 
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_company"
+        android:shortcutId="Company/module_companies"
         android:shortcutShortLabel="@string/companyShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
@@ -134,7 +134,7 @@
 
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_ticket"
+        android:shortcutId="Ticket"
         android:shortcutShortLabel="@string/ticketShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
@@ -145,7 +145,7 @@
 
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_quote"
+        android:shortcutId="Quote"
         android:shortcutShortLabel="@string/quoteShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
@@ -156,7 +156,7 @@
 
     <shortcut
         android:enabled="false"
-        android:shortcutId="get_activity"
+        android:shortcutId="Activity"
         android:shortcutShortLabel="@string/activityShortcutShortLabel">
         <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
