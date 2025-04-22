@@ -3,12 +3,12 @@
     <string name="app_name">Vetcomm</string>
 
     <!-- Module names -->
-    <string name="module_deals">Deals</string>
-    <string name="module_contacts">Contacts</string>
-    <string name="module_companies">Companies</string>
-    <string name="module_tickets">Tickets</string>
-    <string name="module_quotes">Quotes</string>
-    <string name="module_activities">Activities</string>
+    <string name="module_deals">Deal</string>
+    <string name="module_contacts">Contact</string>
+    <string name="module_companies">Company</string>
+    <string name="module_tickets">Ticket</string>
+    <string name="module_quotes">Quote</string>
+    <string name="module_activities">Activity</string>
 
     <!-- UI labels -->
     <string name="label_intent_type">Intent Type: %1$s</string>
@@ -30,5 +30,9 @@
     <string name="ticketShortcutShortLabel">Search Ticket</string>
     <string name="quoteShortcutShortLabel">Search Quote</string>
     <string name="activityShortcutShortLabel">Search Activity</string>
+    <string name="action_data_extras">Action: %1$s\nData: %2$s\nExtras: \n%3$s</string>
+    <string name="none">None</string>
+    <string name="no_intent_data_available">No intent data available</string>
+    <string name="unknown">Unknown</string>
 
 </resources>

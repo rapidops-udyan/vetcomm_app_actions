@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Define capabilities -->
-    <capability android:name="actions.intent.GET_THING">
+    <capability
+        android:name="custom.actions.intent.GET_RECORD"
+        app:queryPatterns="@array/getRecordQueries">
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="com.rapidops.vetcomm.MainActivity"
             android:targetPackage="com.rapidops.vetcomm">
+            <url-template android:value="vetcomm://record{?module,name}" />
             <parameter
-                android:name="thing.name"
-                android:key="query" />
+                android:name="module"
+                android:key="module" />
+            <parameter
+                android:name="name"
+                android:key="name"
+                android:mimeType="https://schema.org/Text" />
         </intent>
     </capability>
 
@@ -25,7 +33,7 @@
 
     <!-- Module shortcuts for listing screens (OPEN_APP_FEATURE) -->
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="deals_list"
         android:shortcutShortLabel="@string/module_deals">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -36,7 +44,7 @@
     </shortcut>
 
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="contacts_list"
         android:shortcutShortLabel="@string/module_contacts">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -47,7 +55,7 @@
     </shortcut>
 
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="companies_list"
         android:shortcutShortLabel="@string/module_companies">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -58,7 +66,7 @@
     </shortcut>
 
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="tickets_list"
         android:shortcutShortLabel="@string/module_tickets">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -69,7 +77,7 @@
     </shortcut>
 
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="quotes_list"
         android:shortcutShortLabel="@string/module_quotes">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -80,7 +88,7 @@
     </shortcut>
 
     <shortcut
-        android:enabled="true"
+        android:enabled="false"
         android:shortcutId="activities_list"
         android:shortcutShortLabel="@string/module_activities">
         <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
@@ -92,68 +100,68 @@
 
     <!-- Module shortcuts for specific record search (GET_THING) -->
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_deal"
+        android:enabled="false"
+        android:shortcutId="get_deal"
         android:shortcutShortLabel="@string/dealShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_deal_synonyms" />
+                android:key="module"
+                android:value="@string/module_deals" />
         </capability-binding>
     </shortcut>
 
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_contact"
+        android:enabled="false"
+        android:shortcutId="get_contact"
         android:shortcutShortLabel="@string/contactShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_contact_synonyms" />
+                android:key="module"
+                android:value="@string/module_contacts" />
         </capability-binding>
     </shortcut>
 
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_company"
+        android:enabled="false"
+        android:shortcutId="get_company"
         android:shortcutShortLabel="@string/companyShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_company_synonyms" />
+                android:key="module"
+                android:value="@string/module_companies" />
         </capability-binding>
     </shortcut>
 
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_ticket"
+        android:enabled="false"
+        android:shortcutId="get_ticket"
         android:shortcutShortLabel="@string/ticketShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_ticket_synonyms" />
+                android:key="module"
+                android:value="@string/module_tickets" />
         </capability-binding>
     </shortcut>
 
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_quote"
+        android:enabled="false"
+        android:shortcutId="get_quote"
         android:shortcutShortLabel="@string/quoteShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_quote_synonyms" />
+                android:key="module"
+                android:value="@string/module_quotes" />
         </capability-binding>
     </shortcut>
 
     <shortcut
-        android:enabled="true"
-        android:shortcutId="search_activity"
+        android:enabled="false"
+        android:shortcutId="get_activity"
         android:shortcutShortLabel="@string/activityShortcutShortLabel">
-        <capability-binding android:key="actions.intent.GET_THING">
+        <capability-binding android:key="custom.actions.intent.GET_RECORD">
             <parameter-binding
-                android:key="thing.name"
-                android:value="@array/thing_activity_synonyms" />
+                android:key="module"
+                android:value="@string/module_activities" />
         </capability-binding>
     </shortcut>
 </shortcuts>

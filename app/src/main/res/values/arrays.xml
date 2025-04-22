@@ -54,53 +54,30 @@
         <item>View activity</item>
     </array>
 
-    <!-- Thing type synonyms for GET_THING (searching specific records) -->
-    <array name="thing_deal_synonyms">
-        <item>deal $name</item>
-        <item>find deal $name</item>
-        <item>show deal $name</item>
-        <item>view deal $name</item>
-        <item>open deal $name</item>
+    <array name="getRecordQueries">
+        <item>show $module $name</item>
+        <item>view $module $name</item>
+        <item>open $module $name</item>
+        <item>find $module $name</item>
+        <item>search for $module $name</item>
+        <item>get $module $name</item>
+        <item>look up $module $name</item>
     </array>
 
-    <array name="thing_contact_synonyms">
-        <item>contact $name</item>
-        <item>find contact $name</item>
-        <item>show contact $name</item>
-        <item>view contact $name</item>
-        <item>open contact $name</item>
-    </array>
-
-    <array name="thing_company_synonyms">
-        <item>company $name</item>
-        <item>find company $name</item>
-        <item>show company $name</item>
-        <item>view company $name</item>
-        <item>open company $name</item>
-    </array>
-
-    <array name="thing_ticket_synonyms">
-        <item>ticket $name</item>
-        <item>find ticket $name</item>
-        <item>show ticket $name</item>
-        <item>view ticket $name</item>
-        <item>open ticket $name</item>
-    </array>
-
-    <array name="thing_quote_synonyms">
-        <item>quote $name</item>
-        <item>find quote $name</item>
-        <item>show quote $name</item>
-        <item>view quote $name</item>
-        <item>open quote $name</item>
-    </array>
-
-    <array name="thing_activity_synonyms">
-        <item>activity $name</item>
-        <item>task $name</item>
-        <item>find activity $name</item>
-        <item>show activity $name</item>
-        <item>view activity $name</item>
-        <item>open activity $name</item>
+    <array name="module_synonyms">
+        <item>deal</item>
+        <item>deals</item>
+        <item>contact</item>
+        <item>contacts</item>
+        <item>company</item>
+        <item>companies</item>
+        <item>ticket</item>
+        <item>tickets</item>
+        <item>quote</item>
+        <item>quotes</item>
+        <item>activity</item>
+        <item>activities</item>
+        <item>task</item>
+        <item>tasks</item>
     </array>
 </resources>
